@@ -1,24 +1,18 @@
-# message-component
+# 类微信消息渲染组件
 
-## Project setup
+##  消息UI模块
+- [ ] 用户文本消息 -- 待开发
+- [ ] 用户图片消息 -- 待开发
+- [ ] 好友文本消息 -- 待开发
+- [ ] 好友图片消息 -- 待开发
+- [ ] 系统文本消息 -- 待开发
+
+
+##  项目运行
 ```
+
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
-### Compiles and minifies for production
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
