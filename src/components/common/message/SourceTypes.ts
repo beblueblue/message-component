@@ -1,4 +1,4 @@
-export enum SendType {
+export enum SourceTypes {
   // 系统消息
   SYS = 0,
   // 用户消息
