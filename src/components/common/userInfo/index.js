@@ -1,4 +1,4 @@
-export default CodeToUseInfo = {
+const CodeToUserInfo =  {
     0: {
         name: '用户',
         profile: '/images/close-up-of-dog.jpg',
@@ -12,3 +12,5 @@ export default CodeToUseInfo = {
         profile: '/images/black-yellow-bird-perched-on-tree-branch.jpg',
     },
 }
+
+export default CodeToUserInfo;

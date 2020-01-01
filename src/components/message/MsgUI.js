@@ -1,9 +1,9 @@
-import UserImg from './UserImg.vue';
-import UserTxt from './UserTxt.vue';
-import OtherTxt from './OtherTxt.vue';
-import OtherImg from './OtherImg.vue';
-import SysTxt from './SysTxt.vue';
-import Blank from './Blank.vue';
+import UserImg from './subUIs/UserImg.vue';
+import UserTxt from './subUIs/UserTxt.vue';
+import OtherTxt from './subUIs/OtherTxt.vue';
+import OtherImg from './subUIs/OtherImg.vue';
+import SysTxt from './subUIs/SysTxt.vue';
+import Blank from './subUIs/Blank.vue';
 
 export default {
   UserImg,

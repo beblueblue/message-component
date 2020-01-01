@@ -1,6 +1,11 @@
 <template>
-  <div class="bgfb">
-    <component v-for="(message, index) in messageList" :is="getMsgType(message.message_info)"></component>
+  <div class="pl20 pt10 pr20 bgf5">
+    <component 
+        v-for="(message, index) in messageListCache" 
+        :is="getMsgType(message.messageInfo)"
+        :message="message"
+        :key="message.id"
+    ></component>
   </div>
 </template>
 
@@ -14,6 +19,9 @@
   export default {
     name: 'MessageRender',
     components: MsgUIComponents,
+    props: {
+        messageList: Array,
+    },
     data() {
       return {
         msgUITypeMap: {
@@ -23,53 +31,11 @@
           otherTxt: 'other-txt',
           otherImg: 'other-img',
         },
-        messageList: [
-        {
-          use_code: 1,
-          message_info: {
-            msgType: 0,
-            sourceType: 2,
-            context: '你好',
-          },
-        },
-        {
-          use_code: 2,
-          message_info: {
-            msgType: 1,
-            sourceType: 2,
-            large_url: '/images/bird2_large.jpg',
-            small_url: '/images/bird2_small.jpg',
-          },
-        },
-        {
-          use_code: 0,
-          message_info: {
-            msgType: 0,
-            sourceType: 1,
-            context: '你好',
-          },
-        },
-        {
-          use_code: 0,
-          message_info: {
-            msgType: 1,
-            sourceType: 1,
-            large_url: '/images/bird1_large.jpg',
-            small_url: '/images/bird1_small.jpg',
-          },
-        },
-        {
-          use_code: -1,
-          message_info: {
-            msgType: 1,
-            sourceType: 0,
-            context: '您撤回了一条消息',
-          },
-        }, ],
+        messageListCache: this.messageList.slice(),
       };
     },
     methods: {
-      /** 
+      /**
        * 获取消息类型
        * @param Object messageInfo 消息详细信息
        * @return String 消息组件名
@@ -100,7 +66,7 @@
         default:
         }
         return type;
-      }
+      },
     },
   };
 </script>
