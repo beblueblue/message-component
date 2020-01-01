@@ -8,7 +8,14 @@
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
+  // 导入UI组件
   import MessageRender from '@c/message/MessageRender.vue';
+  // 导入测试工具
+  import getList from '@/utils/test/mockData';
+
+  const SHORT = 5;
+  const LONG = 1000;
+  const LONGER = 10000;
 
   @Component({
     components: {
@@ -16,68 +23,7 @@
     },
   })
   export default class App extends Vue {
-    messageList = [
-      {
-        id: 0,
-        userCode: 1,
-        messageInfo: {
-          msgType: 0,
-          sourceType: 2,
-          context: '你好',
-        },
-      },
-      {
-        id: 1,
-        userCode: 2,
-        messageInfo: {
-          msgType: 1,
-          sourceType: 2,
-          largeUrl: '/images/bird1_large.jpg',
-          smallUrl: '/images/bird1_small.jpg',
-          imgName: 'bird2',
-        },
-      },
-      {
-        id: 2,
-        userCode: 2,
-        messageInfo: {
-          msgType: 1,
-          sourceType: 2,
-          largeUrl: '/images/bird3_large.jpg',
-          smallUrl: '/images/bird3_small.jpg',
-          imgName: 'bird2',
-        },
-      },
-      {
-        id: 3,
-        userCode: 0,
-        messageInfo: {
-          msgType: 0,
-          sourceType: 1,
-          context: '你好',
-        },
-      },
-      {
-        id: 4,
-        userCode: 0,
-        messageInfo: {
-          msgType: 1,
-          sourceType: 1,
-          largeUrl: '/images/bird2_large.jpg',
-          smallUrl: '/images/bird2_small.jpg',
-          imgName: 'bird1',
-        },
-      },
-      {
-        id: 5,
-        userCode: -1,
-        messageInfo: {
-          msgType: 1,
-          sourceType: 0,
-          context: '您撤回了一条消息',
-        },
-      },
-    ]
+    messageList = getList(LONG)
   }
 </script>
 <style>
