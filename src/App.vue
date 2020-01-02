@@ -17,7 +17,9 @@
 
   const length = 20;
 
-  Vue.use(VueLazyLoad, { attempt: 1 })
+  Vue.use(VueLazyLoad, {
+    attempt: 1,
+  });
 
   @Component({
     components: {
@@ -25,7 +27,7 @@
     },
   })
   export default class App extends Vue {
-    messageList = getList(length)
+    public messageList = getList(length);
   }
 </script>
 <style>
