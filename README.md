@@ -75,7 +75,7 @@ MsgToUI: {
  * }
  */
  ```
- + 利用 [mixin](https://github.com/beblueblue/message-component/tree/b028e7bc5c5cf03e82e2f8854bafbe6ae2de51b3/src/components/message/subUIs/mixins) ,定义获取数据的方式，降低数据格式和UI的耦合。
+ + 利用 [mixin](https://github.com/beblueblue/message-component/tree/b028e7bc5c5cf03e82e2f8854bafbe6ae2de51b3/src/components/message/subUIs/mixins) ，复用获取数据的方式，降低数据格式和UI的耦合。
 
  ## 除Vue之外的引用
  + [ css 样式库 -- 张鑫旭](https://github.com/zhangxinxu/zxx.lib.css) 作用：提高 css 复用。
