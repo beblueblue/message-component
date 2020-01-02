@@ -14,6 +14,10 @@
 #### 基于Vue.js实现，利用Vue-CLI搭建项目。
 ```
 
+git clone https://github.com/beblueblue/message-component.git
+
+cd message-component
+
 npm install
 
 npm run serve
