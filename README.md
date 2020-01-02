@@ -11,6 +11,7 @@
 - [x] 图片懒加载 -- 利用[vue-lazyload](https://github.com/hilongjw/vue-lazyload)
 
 ##  项目运行
+#### 基于Vue.js实现，利用Vue-CLI搭建项目。
 ```
 
 npm install
@@ -21,7 +22,6 @@ npm run serve
 
 ## 实现思路
 
-#### 基于Vue.js实现，利用Vue-CLI搭建项目。
 
 组件 [MessageRender](https://github.com/beblueblue/message-component/blob/master/src/components/message/MessageRender.vue)
 + 设定消息类型ID: MsgTypes和消息发送方ID: SourceTypes
@@ -53,7 +53,7 @@ MsgToUI: {
   blank: 'blank',
 }
 ```
-+ 构建消息虚拟数据 [ListMaker](https://github.com/beblueblue/message-component/blob/b028e7bc5c/src/utils/test/mockData.js) ，用户信息列表 [CodeToUserInfo](https://github.com/beblueblue/message-component/blob/b028e7bc5c5cf03e82e2f8854bafbe6ae2de51b3/src/components/common/userInfo/index.js)
++ 构建消息虚拟数据 [ListMaker](https://github.com/beblueblue/message-component/blob/b028e7bc5c/src/utils/test/mockData.js) 和用户信息映射关系表 [CodeToUserInfo](https://github.com/beblueblue/message-component/blob/b028e7bc5c5cf03e82e2f8854bafbe6ae2de51b3/src/components/common/userInfo/index.js)
 ```
 /**
  * 消息数据格式
@@ -78,6 +78,6 @@ MsgToUI: {
  + [ vue-lazyload ](https://github.com/hilongjw/vue-lazyload) 作用：图片懒加载
 
  ## 不足与解决方案
- + 问题：针对大量聊天记录的性能优化
- 解决方案1： 服务端将记录分页，客户端异步获取；
+ + 问题：针对大量聊天记录的性能优化  
+ 解决方案1： 服务端将记录分页，客户端异步获取；  
  解决方案2： 滚动加载可视区域数据，可参考[饿了么实现](https://zhuanlan.zhihu.com/p/34585166?group_id=959080998969823232)。
