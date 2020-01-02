@@ -12,10 +12,12 @@
   import MessageRender from '@c/message/MessageRender.vue';
   // 导入测试工具
   import getList from '@/utils/test/mockData';
+  // 导入懒加载模块
+  import VueLazyLoad from 'vue-lazyload';
 
-  const SHORT = 5;
-  const LONG = 1000;
-  const LONGER = 10000;
+  const length = 20;
+
+  Vue.use(VueLazyLoad, { attempt: 1 })
 
   @Component({
     components: {
@@ -23,7 +25,7 @@
     },
   })
   export default class App extends Vue {
-    messageList = getList(LONG)
+    messageList = getList(length)
   }
 </script>
 <style>

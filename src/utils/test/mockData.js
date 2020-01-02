@@ -6,7 +6,7 @@ const userCodes = [-1, 0, 1, 2];
 const typeIDs = [MsgTypes.TXT, MsgTypes.IMG];
 const sysTxtList = [
   '您撤回了一条消息',
-  '欢迎 李白 加入群里',
+  '欢迎 李白 加入群聊',
   '很遗憾！荀子 退出了群聊',
 ];
 const contextList = [

@@ -1,10 +1,10 @@
 <template>
   <div class="user-img-box flex flex-justify-content-flex-end pt10 pb10">
     <div class="img-msg-box mr5">
-      <img class="img-msg" :src="getUserImg().smallUrl" :alt="getUserImg().imgName">
+      <img class="img-msg" v-lazy="getUserImg().smallUrl" :alt="getUserImg().imgName">
       <div class="shadow-block"></div>
     </div>
-    <img class="b-r-4 w30 h30" :src="getUserInfo().profile" :alt="getUserInfo().name">
+    <img class="b-r-4 w30 h30" v-lazy="getUserInfo().profile" :alt="getUserInfo().name">
   </div>
 </template>
 

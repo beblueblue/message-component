@@ -17,10 +17,12 @@
 
 <style lang="less">
   @white: #fff;
+  @space-width: 30px;
 
   .other-txt-box {
     >p {
       position: relative;
+      max-width: calc(80% - @space-width);
       background-color: @white;
 
       &:after {

@@ -17,10 +17,12 @@
 
 <style lang="less">
   @soft-green: #7fde5c;
+  @space-width: 30px;
 
   .user-txt-box {
     >p {
       position: relative;
+      max-width: calc(80% - @space-width);
       background-color: @soft-green;
 
       &:after {

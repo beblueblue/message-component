@@ -1,5 +1,5 @@
 <template>
-  <div class="pl20 pt10 pr20 bgf5">
+  <div class="list-box pl20 pr20 bgf5">
     <component 
         v-for="(message, index) in messageListCache" 
         :is="getMsgType(message.messageInfo)"
@@ -70,3 +70,9 @@
     },
   };
 </script>
+
+<style>
+.list-box {
+    min-height: 100%;
+}
+</style>

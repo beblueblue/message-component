@@ -8,8 +8,7 @@
 - [x] 系统文本消息
 
 ##  性能优化
-- [ ] 长列表渲染优化 -- 待优化
-- [ ] 资源懒加载 -- 待优化
+- [x] 图片懒加载 -- 利用[vue-lazyload](https://github.com/hilongjw/vue-lazyload)
 
 ##  项目运行
 ```

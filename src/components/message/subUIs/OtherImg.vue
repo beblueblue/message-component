@@ -1,8 +1,8 @@
 <template>
   <div class="other-img-box flex pt10 pb10">
-    <img class="b-r-4 w30 h30" :src="getUserInfo().profile" :alt="getUserInfo().name">
+    <img class="b-r-4 w30 h30" v-lazy="getUserInfo().profile" :alt="getUserInfo().name">
     <div class="img-msg-box ml5">
-      <img class="img-msg" :src="getOtherImg().smallUrl" :alt="getOtherImg().imgName">
+      <img class="img-msg" v-lazy="getOtherImg().smallUrl" :alt="getOtherImg().imgName">
       <div class="shadow-block"></div>
     </div>
   </div>
