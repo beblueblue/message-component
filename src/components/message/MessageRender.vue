@@ -24,13 +24,6 @@
     },
     data() {
       return {
-        msgUITypeMap: {
-          sysTxt: 'sys-txt',
-          useTxt: 'use-txt',
-          useImg: 'use-img',
-          otherTxt: 'other-txt',
-          otherImg: 'other-img',
-        },
         messageListCache: this.messageList.slice(),
       };
     },

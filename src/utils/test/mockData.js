@@ -47,6 +47,18 @@ function getRandom(arr) {
 
 /**
  * 虚拟数据生成器
+ * msgItem: {
+ *    id: Number,
+ *    userCode: Number | String,
+ *    messageInfo: {
+ *        msgType: Number
+ *        sourceType: Number,
+ *        context?: String,
+ *        largeUrl?: String,
+ *        smallUrl?: String,
+ *        imgName?: String,
+ *    }
+ * }
  */
 class ListMaker {
   constructor(length) {
